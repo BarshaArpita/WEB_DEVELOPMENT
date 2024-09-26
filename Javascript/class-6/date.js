@@ -47,51 +47,62 @@ const myDate = new Date("2002,6,11");
 //const myBday = new Date("MM/DD/YYYY")
 //const myBday = new Date("06/11/2002")
 myBday = new Date("06-11-2002");
-console.log(myBday);//2002-06-10T18:30:00.000Z
-console.log(myBday.getDate()); //11
+// console.log(myBday);//2002-06-10T18:30:00.000Z
+// console.log(myBday.getDate()); //11
 
 //Long date
 const LongDate = new Date("June 11,2002");
-console.log(LongDate); //2002-06-10T18:30:00.000Z
-console.log(LongDate.toString()); //Tue Jun 11 2002 00:00:00 GMT+0530 (India Standard Time)
-console.log(LongDate.toDateString()); //Tue Jun 11 2002
-console.log(LongDate.toLocaleTimeString()); // 12:00:00 am
+// console.log(LongDate); //2002-06-10T18:30:00.000Z
+//console.log(LongDate.toString()); //Tue Jun 11 2002 00:00:00 GMT+0530 (India Standard Time)
+//console.log(LongDate.toDateString()); //Tue Jun 11 2002
+// console.log(LongDate.toLocaleTimeString()); // 12:00:00 am
 
 //Manipulate current date
 // 1. add days
 const addDays = currentDateTime.setDate(18);
-console.log(addDays); //1726641935604
+// console.log(addDays); //1726641935604
 // 2. add month
 const addMonth = currentDateTime.setMonth(10);
-console.log(addMonth); //1731912424611
+// console.log(addMonth); //1731912424611
 // 3. add year
 const addYear = currentDateTime.setFullYear(2025);
-console.log(addYear); //1763448508626
+// console.log(addYear); //1763448508626
 
 //Alternate method for adding days
 const addDaysAlternate = new Date(currentDateTime.getTime()+17*24*60);
-console.log(addDaysAlternate); //2025-11-18T06:51:30.965Z
-console.log(addDaysAlternate.getDate()); //18
-console.log(addDaysAlternate.getFullYear()); //2025
-console.log(addDaysAlternate.getMonth()); //10
+// console.log(addDaysAlternate); //2025-11-18T06:51:30.965Z
+// console.log(addDaysAlternate.getDate()); //18
+// console.log(addDaysAlternate.getFullYear()); //2025
+// console.log(addDaysAlternate.getMonth()); //10
 
 //or
 let futureDay = new Date();
-console.log(futureDay.getDay()); // 2- Tuesday
+// console.log(futureDay.getDay()); // 2- Tuesday
 futureDay.setDate(futureDay.getDay()+5);
-console.log(futureDay);
-console.log(futureDay.getDay()); // 6- Saturday
+// console.log(futureDay);
+// console.log(futureDay.getDay()); // 6- Saturday
 
 //Find my current age
 const myAge = new Date().getFullYear() - myBday.getFullYear();
-console.log(myAge); // 22
+// console.log(myAge); // 22
 
 //Difference
 const curr = new Date("2024-09-17");
 const bday = new Date("2002-06-11");
-console.log(curr-bday); //702777600000
-const age = Math.floor((curr-bday) / (1000 * 60 * 60 * 24));
-console.log(age); // 8134
+// console.log(curr-bday); //702777600000
+// const age = Math.floor((curr-bday) / (1000 * 60 * 60 * 24));
+// console.log(age); // 8134
+
+// Task-1 :
+//Find the difference  between two dates
+
+const date1 = new Date("2024-09-17");
+const date2 = new Date("2024-09-18");
+const oneDay = 24 * 60 * 60 * 1000; // hours * minutes * seconds * miliseconds
+const diffTime = Math.abs(date2-date1);
+const diffDays = Math.floor(diffTime / oneDay);
+// console.log(diffDays); //1 day difference
+
 
 
 
