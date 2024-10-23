@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  /* background-image: url("https://png.pngtree.com/background/20230416/original/pngtree-website-blue-technology-line-background-picture-image_2443655.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* color: white; */
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid; */
+}
+
+nav .list_items {
+  width: 50%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+nav li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .logo {
+  width: 30%;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+nav li a:hover {
+  border-bottom: 5px solid black;
+  cursor: pointer;
+}
+
+nav .logo:hover {
+  cursor: pointer;
+}
