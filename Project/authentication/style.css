@@ -4,26 +4,22 @@
   box-sizing: border-box;
 }
 
-html,
 body {
   font-size: 16px;
-  /* background-image: url("https://png.pngtree.com/background/20230416/original/pngtree-website-blue-technology-line-background-picture-image_2443655.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* color: white; */
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 nav {
+  border: 2px solid;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid; */
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 4px 2px 2px;
 }
 
 nav .list_items {
@@ -48,8 +44,7 @@ nav .logo {
 }
 
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
 }
 
 nav li a:hover {
@@ -59,4 +54,83 @@ nav li a:hover {
 
 nav .logo:hover {
   cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: black;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+footer .footer-contents {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+footer .first img {
+  width: 120px;
+}
+footer .logo-container {
+  display: flex;
+  gap: 5px;
+}
+
+footer .second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+footer .second p {
+  width: 380px;
+  text-align: center;
+}
+
+footer .third {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+footer .third li {
+  list-style: none;
+}
+
+footer .fourth {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+footer .fourth li {
+  list-style: none;
+}
+
+footer .line-strike {
+  color: #8a8a8a;
+  border: 1px solid;
+  height: 1px;
+}
+
+footer .copy-rights {
+  text-align: center;
 }
