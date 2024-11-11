@@ -6,6 +6,7 @@
 
 body {
   font-size: 16px;
+  color: black;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -55,14 +56,13 @@ nav li a:hover {
 nav .logo:hover {
   cursor: pointer;
 }
-
 footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
   background-color: black;
   color: #fff;
-  padding-bottom: 20px;
+  padding-bottom: 41px;
 }
 
 footer .footer-contents {
@@ -100,7 +100,6 @@ footer .second p {
   width: 380px;
   text-align: center;
 }
-
 footer .third {
   display: flex;
   flex-direction: column;

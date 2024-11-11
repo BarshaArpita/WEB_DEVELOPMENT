@@ -185,6 +185,7 @@ const newSliceArray = array4.slice(3, 6); // (startIndex: include, endIndex: Exc
 const months = ["A", "B", "C", "D", "E", "F", "G"];
 months.splice(1, 2, "X", "Y");
 // console.log(months); //  ["A", "X", "Y", "D", "E", "F", "G"];
+
 // Delete nothing add "U" and "V" in between "E" and "F"
 // ["A", "X", "Y", "D", "E", "F", "G"];
 months.splice(5, 0, "U", "V");
